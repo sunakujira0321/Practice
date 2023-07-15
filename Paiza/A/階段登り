@@ -1,0 +1,21 @@
+
+n = int(input())
+a,b = map(int, input().split())
+ans = [0]*(n+1)
+
+# 階段がA,Bよりも小さい場合
+if n<min(a,b) :
+    print(ans.count(0)-1)
+else:
+    for i in range(min(a,b),n+1):
+        if i%a==0 or i%b==0:
+            ans[i] = 1
+        elif ans[i-a] == 1 or ans[i-b] == 1:
+            ans[i] = 1
+        if i == n:
+            ans[i] = 1 
+    print(ans.count(0)-1)
+    # for j in ans:
+    #     print(j)
+
+
