@@ -39,3 +39,4 @@ test/node_modules/react/cjs/react.shared-subset.production.min.js
 test/node_modules/react/umd/react.development.js
 test/node_modules/react/umd/react.production.min.js
 test/node_modules/react/umd/react.profiling.min.js
+test/*
